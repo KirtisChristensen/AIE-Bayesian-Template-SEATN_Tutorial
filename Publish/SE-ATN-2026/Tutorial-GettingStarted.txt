@@ -1,0 +1,50 @@
+SE-ATN 2026 Tutorial - Getting Started
+
+Notebook:
+- llm_bayesian_reliability_tool_symposium-tutorial-2026.ipynb
+
+One-click Colab launch URL:
+- https://colab.research.google.com/github/KirtisChristensen/AIE-Bayesian-Template-SEATN_Tutorial/blob/main/Publish/SE-ATN-2026/llm_bayesian_reliability_tool_symposium-tutorial-2026.ipynb
+
+Colab badge markdown (use in README.md or other markdown files):
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KirtisChristensen/AIE-Bayesian-Template-SEATN_Tutorial/blob/main/Publish/SE-ATN-2026/llm_bayesian_reliability_tool_symposium-tutorial-2026.ipynb)
+
+============================================================
+1) Open the notebook in Google Colab
+============================================================
+- Use the Open in Colab badge in the notebook, or open Colab and upload the .ipynb file.
+
+============================================================
+2) Create the named secret key in Colab
+============================================================
+Do these steps before running notebook cells:
+
+1. In Colab, click the key icon in the left sidebar (Secrets).
+2. Click Add new secret.
+3. Name the secret exactly: OPENAI_API_KEY
+4. Paste the key value in the Value field.
+5. Turn Notebook access ON for this secret.
+
+Important:
+- Keep this key private.
+- Do not paste the key into notebook code cells.
+- Do not commit the key to GitHub.
+
+============================================================
+3) Temporary key value (to be provided by facilitator)
+============================================================
+OPENAI_API_KEY = ________________________________________________
+
+(Leave blank until the facilitator provides the temporary key.)
+
+============================================================
+4) Run the tutorial
+============================================================
+- Runtime menu -> Run all
+- Wait for setup to complete.
+- Proceed section by section.
+
+If API connection fails:
+- Re-check secret name spelling: OPENAI_API_KEY
+- Confirm Notebook access is ON for that secret.
+- Re-run the LLM configuration cell.
