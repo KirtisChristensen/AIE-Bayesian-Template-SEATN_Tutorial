@@ -1,18 +1,39 @@
 SE-ATN 2026 Tutorial - Getting Started
 
-Notebook:
+
+Tutorial Description:
+- This is a playful exploration of applying problem solving through the iterative exploration of data.
+- Uses a Jupyter Notebook running publicly out in Google Colab using NO RTX problem data to keep this tutorial accessible and simple.
+- Leveraging some methods from Hubbards' AIE framework.
+- Using AI LLMs to decompose and better understand the problem and any missing measures.
+- Using AI LLMs to build the Bayesian Chain with selected measures best applicable distributions
+- Some background with coding and reliability engineering is helpful but not essential.
+- References for the supporting research, a draft manuscript, and the PowerPoint tutorial are provided separately.
+
+Notebook used for the tutorial:
 - llm_bayesian_reliability_tool_symposium-tutorial-2026.ipynb
 
+Prerequisites
+- Google account required (signed in) for Colab + Secrets
+- Modern browser (Chrome/Edge/Firefox/Safari)
+- Reliable internet connection
+- Access to colab.research.google.com and github.com (some org networks block these)
+
+Some Cautions:
+- Do not use proprietary company problem data for the tutorial problem descriptions.
+- Don't share the tutorial outside RTX employees.
+- If you do not Save a copy in Drive first, your edits and outputs may be lost and are not guaranteed to persist.
+- If sharing one temporary key across participants, expect possible rate-limit errors; retry after a pause or use individual keys when available.
+
+============================================================
+1) Open the notebook in Google Colab and Save your own copy
+============================================================
+- Use the Open in Colab badge in the notebook, or open Colab and upload the .ipynb file.
 One-click Colab launch URL:
 - https://colab.research.google.com/github/KirtisChristensen/AIE-Bayesian-Template-SEATN_Tutorial/blob/main/Publish/SE-ATN-2026/llm_bayesian_reliability_tool_symposium-tutorial-2026.ipynb
 
-Colab badge markdown (use in README.md or other markdown files):
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KirtisChristensen/AIE-Bayesian-Template-SEATN_Tutorial/blob/main/Publish/SE-ATN-2026/llm_bayesian_reliability_tool_symposium-tutorial-2026.ipynb)
-
-============================================================
-1) Open the notebook in Google Colab
-============================================================
-- Use the Open in Colab badge in the notebook, or open Colab and upload the .ipynb file.
+*Required: Save a personal copy in Drive before running (File > Save a copy in Drive).
+- work from your working copy for the tutorial
 
 ============================================================
 2) Create the named secret key in Colab
@@ -22,7 +43,7 @@ Do these steps before running notebook cells:
 1. In Colab, click the key icon in the left sidebar (Secrets).
 2. Click Add new secret.
 3. Name the secret exactly: OPENAI_API_KEY
-4. Paste the key value in the Value field.
+4. Paste the key value in the Value field. (If you have your own key, please use it; otherwise one tutorial key is available for everyone.)
 5. Turn Notebook access ON for this secret.
 
 Important:
