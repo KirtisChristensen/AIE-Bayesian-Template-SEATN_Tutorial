@@ -11,7 +11,7 @@ Tutorial Description:
 - References for the supporting research, a draft manuscript, and the PowerPoint tutorial are provided separately.
 
 Notebook used for the tutorial:
-- llm_bayesian_reliability_tool_symposium-tutorial-2026.ipynb
+- llm_bayesian_reliability_tool_symposium-tutorial-2026-Colab.ipynb
 
 Prerequisites
 - Google account required (signed in) for Colab + Secrets
@@ -23,40 +23,46 @@ Some Cautions:
 - Do not use proprietary company problem data for the tutorial problem descriptions.
 - Don't share the tutorial outside RTX employees.
 - If you do not Save a copy in Drive first, your edits and outputs may be lost and are not guaranteed to persist.
-- If sharing one temporary key across participants, expect possible rate-limit errors; retry after a pause or use individual keys when available.
+- If sharing one temporary API key across participants, expect possible rate-limit errors; retry after a pause or use individual keys when available.
 
 ============================================================
 1) Open the notebook in Google Colab and Save your own copy
 ============================================================
 - Use the Open in Colab badge in the notebook, or open Colab and upload the .ipynb file.
 One-click Colab launch URL:
-- https://colab.research.google.com/github/KirtisChristensen/AIE-Bayesian-Template-SEATN_Tutorial/blob/main/Publish/SE-ATN-2026/llm_bayesian_reliability_tool_symposium-tutorial-2026.ipynb
+- https://colab.research.google.com/github/KirtisChristensen/AIE-Bayesian-Template-SEATN_Tutorial/blob/main/Publish/SE-ATN-2026/llm_bayesian_reliability_tool_symposium-tutorial-2026-Colab.ipynb
 
 *Required: Save a personal copy in Drive before running (File > Save a copy in Drive).
 - work from your working copy for the tutorial
 
 ============================================================
-2) Create the named secret key in Colab
+2) Create the required secret names in Colab
 ============================================================
 Do these steps before running notebook cells:
 
 1. In Colab, click the key icon in the left sidebar (Secrets).
 2. Click Add new secret.
-3. Name the secret exactly: OPENAI_API_KEY
-4. Paste the key value in the Value field. (If you have your own key, please use it; otherwise one tutorial key is available for everyone.)
-5. Turn Notebook access ON for this secret.
+3. Create secret #1 exactly as:
+	- Name: TUTORIAL_LIB_TOKEN
+	- Value: facilitator-provided token value (or your own value, if used)
+	- Notebook access: ON
+4. Create secret #2 exactly as:
+	- Name: OPENAI_API_KEY
+	- Value: your OpenAI API key (optional if using offline fallback)
+	- Notebook access: ON
 
 Important:
-- Keep this key private.
-- Do not paste the key into notebook code cells.
-- Do not commit the key to GitHub.
+- Keep both secrets private.
+- Do not paste secrets into notebook code cells.
+- Do not commit secrets to GitHub.
 
 ============================================================
-3) Temporary key value (to be provided by facilitator)
+3) Temporary value placeholders (to be provided by facilitator)
 ============================================================
+TUTORIAL_LIB_TOKEN = __________________________________________
 OPENAI_API_KEY = ________________________________________________
 
-(Leave blank until the facilitator provides the temporary key.)
+(Leave blank until facilitator values are provided.)
 
 ============================================================
 4) Run the tutorial
@@ -64,6 +70,11 @@ OPENAI_API_KEY = ________________________________________________
 - Runtime menu -> Run all
 - Wait for setup to complete.
 - Proceed section by section.
+
+If tutorial_lib install fails:
+- Re-check secret name spelling: TUTORIAL_LIB_TOKEN
+- Confirm Notebook access is ON for TUTORIAL_LIB_TOKEN.
+- Re-run the first setup/install cell.
 
 If API connection fails:
 - Re-check secret name spelling: OPENAI_API_KEY
